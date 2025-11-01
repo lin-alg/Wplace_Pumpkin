@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Wplace_Pumpkin",
+  "version": "1.0",
+  "description": "按顺序打开列表 URL，记录用户点击点并在每页模拟点击并尝试点击 Claim 按钮",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "storage",
+    "alarms",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Wplace_Pumpkin"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "/icons/icon48.png"
+  }
+}
